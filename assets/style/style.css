@@ -1,0 +1,750 @@
+@import './fonts.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background: rgb(20, 17, 14);
+}
+
+.container{
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1110px;
+}
+
+.pag{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 120px;
+}
+
+.nav{
+    background: rgb(28, 24, 20);
+}
+
+.nav__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__list{
+    display: flex;
+    gap: 48px;
+}
+
+.nav__list-link{
+    color: rgb(255, 255, 255);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: .5s;
+}
+
+.nav__list-link:hover{
+    color: rgb(201, 158, 113);
+}
+
+.header__content{
+    background-image: url(../img/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 950px;
+    max-width: 100%;
+}
+
+.header__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__title{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 600px;
+    margin-left: 375px;
+    margin-top: 253px;
+}
+
+.header__descr{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Urbanist';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0%;
+    max-width: 420px;
+    margin-left: 375px;
+    margin-top: 32px;
+    margin-bottom: 28px;
+}
+
+.header__btn{
+    color: rgb(255, 255, 255);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    background: rgb(201, 158, 113);
+    padding: 24px 40px;
+    max-width: 200px;
+    margin-left: 375px;
+    text-align: center;
+    transition: .5s;
+}
+
+.header__btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.header__watch{
+    margin-left: 1150px;
+    bottom: 110px;
+    position: relative;
+}
+
+.capucino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.capucino__content{
+    display: flex;
+    gap: 36px;
+}
+
+.capucino__content-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.capucino__content-title{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.capucino__content-title span{
+    color: rgb(201, 158, 113);
+    font-family: 'Righteous';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: 12px;
+}
+
+.coffee__img{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.coffee{
+    display: flex;
+    margin-top: 140px;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.coffe__images{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.coffee__card{
+    background: rgb(28, 24, 20);
+    padding: 15px 56px;
+    max-width: 510px;
+    display: flex;
+    align-items: center;
+}
+
+.coffee__card-text-subtitle{
+    color: rgb(201, 158, 113);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.coffee__card-text-title{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 36px;
+}
+
+.coffee__card-text-descr{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.product{
+    margin-top: 155px;
+}
+
+.product__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product__content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.product__content-subtitle{
+    color: rgb(201, 158, 113);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.product__content-title{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.product__cards{
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.product__card{
+    max-width: 366px;
+    background: rgb(18, 19, 21);
+    padding: 35px 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__card-subtitle{
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.product__card-subtitle span{
+    color:  rgb(201, 158, 113);
+}
+
+.spans{
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: white;
+}
+
+.product__card-btn{
+    color: rgb(255, 255, 255);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+    background: rgb(201, 158, 113);
+    padding: 13px 15px;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    transition: .5s;
+    margin-top: 20px;
+}
+
+.product__card-btn:hover{
+    color: black;
+    background: rgb(104, 144, 48);
+}
+
+.product__card-btn img{
+    margin-right: 15px;
+}
+
+.product__card-titles{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product__card-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    gap: 8px;
+}
+
+.product__card-icons-title{
+    color: rgb(201, 158, 113);
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.product__btn{
+    margin-top: 70px;
+    padding: 20px 36px;
+    background: rgb(201, 158, 113);
+    color: rgb(255, 255, 255);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.product__btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.coffee__machine{
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.coffee__machine-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 160px;
+    background: rgb(28, 24, 20);
+    padding: 65px 86px;
+    max-width: 1170px;
+}
+
+.coffee__machine-text{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.coffee__machine-title{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 511px;
+}
+
+.coffee__machine-descr{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 590px;
+}
+
+.coffee__machine-btn{
+    color: rgb(255, 255, 255);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    background: rgb(201, 158, 113);
+    padding: 20px 36px;
+    max-width: 215px;
+    transition: .5s;
+}
+
+.coffee__machine-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.menu__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.menu__subtitle{
+    color: rgb(201, 158, 113);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu__title{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.menu__content-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    gap: 70px;
+}
+
+.menu-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.menu__card{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(50, 50, 61);
+    padding: 15px;
+    max-width: 565px;
+}
+
+.menu__card-title{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.menu__card-price{
+    color: rgb(201, 158, 113);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 108px;
+}
+
+.customers{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 56px;
+}
+
+.customers__text-title{
+    color: rgb(201, 158, 113);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.customers__text-subtitle{
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.customers__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.customer__cards{
+    background: rgb(28, 24, 20);
+    padding: 35px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 565px;
+}
+
+.customer__cards-descr{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    max-width: 332px;
+    margin-left: 24px;
+}
+.customer__cards-icons-img{
+    display: flex;
+    align-items: center;
+    margin-left: 278px;
+    gap: 5px;
+    margin-top: 31px;
+}
+
+.customer__cards-icons{
+    display: flex;
+}
+
+.customer__cards-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+}
+
+.customer__cards-title{
+    color: rgb(255, 255, 255);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.customer__cards-subtitle{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Urbanist';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.place{
+    margin-top: 200px;
+}
+
+.place__contetn-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.place__content-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(28, 24, 20);
+    width: 585px;
+    height: 652px;
+}
+
+.place__contetn-card-title{
+    color: rgb(201, 158, 113);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.place__contetn-card-subtitle{
+    margin-top: 13px;
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous';
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 56px;
+}
+
+.place__contetn-card-btn{
+    background: rgb(201, 158, 113);
+    max-width: 210px;
+    color: rgb(255, 255, 255);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 36px;
+    margin-top: 56px;
+    transition: .5s;
+}
+
+.place__contetn-card-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.nub{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.place__contetn-card-form input{
+    background: rgb(20, 20, 20);
+    width: 100%;
+    max-width: 489px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 20px;
+    width: 489px;
+    height: 64px;
+}
+
+.footer{
+    margin-top: 200px;
+}
+
+.box{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.nav__content{
+    display: flex;
+    justify-content: center;
+}
+
+.naves__list{
+    display: flex;
+    gap: 35px;
+    margin-left: 30px;
+}
+
+.naves__list-link{
+    color: rgb(255, 255, 255);
+    font-family: 'Urbanist';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer__form{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer__form input{
+    border-radius: 36px;
+    background: rgb(28, 24, 20);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+    padding: 22px 70px 22px 28px;
+    margin-left: 26px;
+}
+
+.footer__form-btn{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 22px 44px 0px rgba(201, 158, 113, 0.2);
+    background: rgb(201, 158, 113);
+    transition: .5s;
+}
+
+.footer__form-btn:hover{
+    background: rgb(251, 131, 3);
+}
